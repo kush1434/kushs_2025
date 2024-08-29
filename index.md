@@ -5,4 +5,4 @@ description: Home Page
 hide: true
 ---
 
-My journey starts here.
+Kush's journey starts here. new one
