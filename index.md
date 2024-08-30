@@ -7,69 +7,50 @@ hide: true
 
 **AP Computer Science Principles**
 
-<h3>Kush Shah</h3>
-<h3>Period: 2</h3>
+<h4>Kush Shah</h4>
+<h4>Period: 2</h4>
 
 **My Path to Success**
 
-My goals while taking this class are to learn the funadmentals of 
-computer science. Along with this I aspire to gain the knowledge of computational thinking.
-With these skills I would like escalate my knowledge Python and become familiar 
-with Web Development. In all I believe that the knowledge and skills I will gain from this
+My goals while taking this class are to learn the fundamentals of 
+computer science. Along with this, I aspire to gain the knowledge of computational thinking.
+With these skills, I would like to escalate my knowledge of Python and become familiar 
+with Web Development. In all, I believe that the knowledge and skills I will gain from this
 class will eventually help me apply them to real-world situations.
 
-
-<!--- HTML for page contains <p> tag named "Mario" and class properties for a "sprite"  -->
-
 <p id="mario" class="sprite"></p>
-  
-<!--- Embedded Cascading Style Sheet (CSS) rules, 
-        define how HTML elements look 
---->
-<style>
 
-  /*CSS style rules for the id and class of the sprite...
-  */
+<style>
   .sprite {
-    height: {{pixels}}px;
-    width: {{pixels}}px;
-    background-image: url('{{sprite_file}}');
+    height: 64px;
+    width: 64px;
+    background-image: url('path_to_your_image/mario_sprite.png');
     background-repeat: no-repeat;
   }
 
-  /*background position of sprite element
-  */
   #mario {
-    background-position: calc({{animations[0].col}} * {{pixels}} * -1px) calc({{animations[0].row}} * {{pixels}}* -1px);
+    background-position: 0 0;
   }
 </style>
 
-<!--- Embedded executable code--->
 <script>
-  ////////// convert YML hash to javascript key:value objects /////////
-
-  var mario_metadata = {}; //key, value object
-  {% for key in hash %}  
-  
-  var key = "{{key | first}}"  //key
-  var values = {} //values object
-  values["row"] = {{key.row}}
-  values["col"] = {{key.col}}
-  values["frames"] = {{key.frames}}
-  mario_metadata[key] = values; //key with values added
-
-  {% endfor %}
-
-  ////////// game object for player /////////
+  var mario_metadata = {
+    Walk: { row: 0, col: 0, frames: 3 },
+    Run1: { row: 1, col: 0, frames: 4 },
+    Puff: { row: 2, col: 0, frames: 2 },
+    Cheer: { row: 3, col: 0, frames: 2 },
+    Flip: { row: 4, col: 0, frames: 3 },
+    Rest: { row: 5, col: 0, frames: 1 }
+  };
 
   class Mario {
     constructor(meta_data) {
-      this.tID = null;  //capture setInterval() task ID
-      this.positionX = 0;  // current position of sprite in X direction
+      this.tID = null;
+      this.positionX = 0;
       this.currentSpeed = 0;
-      this.marioElement = document.getElementById("mario"); //HTML element of sprite
-      this.pixels = {{pixels}}; //pixel offset of images in the sprite, set by liquid constant
-      this.interval = 100; //animation time interval
+      this.marioElement = document.getElementById("mario");
+      this.pixels = 64;
+      this.interval = 100;
       this.obj = meta_data;
       this.marioElement.style.position = "absolute";
     }
@@ -131,8 +112,6 @@ class will eventually help me apply them to real-world situations.
 
   const mario = new Mario(mario_metadata);
 
-  ////////// event control /////////
-
   window.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight") {
       event.preventDefault();
@@ -155,40 +134,31 @@ class will eventually help me apply them to real-world situations.
     }
   });
 
-  //touch events that enable animations
   window.addEventListener("touchstart", (event) => {
-    event.preventDefault(); // prevent default browser action
+    event.preventDefault();
     if (event.touches[0].clientX > window.innerWidth / 2) {
-      // move right
-      if (currentSpeed === 0) { // if at rest, go to walking
+      if (currentSpeed === 0) {
         mario.startWalking();
-      } else if (currentSpeed === 3) { // if walking, go to running
+      } else if (currentSpeed === 3) {
         mario.startRunning();
       }
     } else {
-      // move left
       mario.startPuffing();
     }
   });
 
-  //stop animation on window blur
   window.addEventListener("blur", () => {
     mario.stopAnimate();
   });
 
-  //start animation on window focus
   window.addEventListener("focus", () => {
-     mario.startFlipping();
+    mario.startFlipping();
   });
 
-  //start animation on page load or page refresh
   document.addEventListener("DOMContentLoaded", () => {
-    // adjust sprite size for high pixel density devices
     const scale = window.devicePixelRatio;
     const sprite = document.querySelector(".sprite");
     sprite.style.transform = `scale(${0.2 * scale})`;
     mario.startResting();
   });
-
 </script>
-
