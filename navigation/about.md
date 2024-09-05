@@ -10,5 +10,5 @@ My father immigrated to the United States from India for work.
 <br>
 As a result I am an American Indian.
 
-<img src="american_flag.webp" alt="American Flag">
-<img src="indian_flag.png" alt="Indian Flag">
+<img src="/Users/kushshah/nighthawk/kushs_2025/american_flag.webp" alt="American Flag">
+<img src="/Users/kushshah/nighthawk/kushs_2025/indian_flag.png" alt="Indian Flag">
