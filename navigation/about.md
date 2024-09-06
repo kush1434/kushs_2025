@@ -31,8 +31,8 @@ permalink: /about/
 
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"flag": "a/a4/Flag_of_the_United_States.svg", "greeting": "Hello", "description": "United States - home country"},
-        {"flag": "4/41/Flag_of_India.svg", "greeting": "Namaste", "description": "India - cultural roots"},
+        {"flag": "a/a4/Flag_of_the_United_States.svg", "description": "United States"},
+        {"flag": "4/41/Flag_of_India.svg", "description": "India"},
     ]; 
     
     for (const location of living_in_the_world) {
@@ -46,13 +46,8 @@ permalink: /about/
         var description = document.createElement("p");
         description.textContent = location.description;
 
-        var greeting = document.createElement("p");
-        greeting.textContent = location.greeting;
-
         gridItem.appendChild(img);
         gridItem.appendChild(description);
-        gridItem.appendChild(greeting);
-
         container.appendChild(gridItem);
     }
 </script>
