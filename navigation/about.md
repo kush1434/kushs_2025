@@ -1,8 +1,27 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
+
+**AP Computer Science Principles**
+<ul>
+<li>My name is Kush and I am a sophmore at Del Norte High School</li>
+<li>My parents are both immigrants from India</li>
+<li>I enjoy playing basketball and sleeping in my free time</li>
+</ul>
+
+**My Path to Success**
+
+My goals while taking this class are to learn the fundamentals of 
+computer science. Along with this, I aspire to gain the knowledge of computational thinking.
+With these skills, I would like to escalate my knowledge of Python and become familiar 
+with Web Development. In all, I believe that the knowledge and skills I will gain from this
+class will eventually help me apply them to real-world situations.
+<br>
+
+**My Nationality**
+<br>
 <style>
     .grid-container {
         display: grid;
@@ -31,8 +50,8 @@ permalink: /about/
 
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"flag": "a/a4/Flag_of_the_United_States.svg", "description": "United States"},
-        {"flag": "4/41/Flag_of_India.svg", "description": "India"},
+        {"flag": "a/a4/Flag_of_the_United_States.svg", "description": "American"},
+        {"flag": "4/41/Flag_of_India.svg", "description": "Indian"},
     ]; 
     
     for (const location of living_in_the_world) {

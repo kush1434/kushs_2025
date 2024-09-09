@@ -5,18 +5,6 @@ description: Home Page
 hide: true
 ---
 
-**AP Computer Science Principles**
-
-<h4>Kush Shah</h4>
-<h4>Period: 2</h4>
-
-**My Path to Success**
-
-My goals while taking this class are to learn the fundamentals of 
-computer science. Along with this, I aspire to gain the knowledge of computational thinking.
-With these skills, I would like to escalate my knowledge of Python and become familiar 
-with Web Development. In all, I believe that the knowledge and skills I will gain from this
-class will eventually help me apply them to real-world situations.
 
 <p id="mario" class="sprite"></p>
 
