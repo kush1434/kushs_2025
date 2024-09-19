@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Ideas
 description: This is ideas page
 permalink: /snake/
 ---

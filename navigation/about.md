@@ -2,7 +2,9 @@
 layout: page
 title: About Me
 permalink: /about/
+comments: true
 ---
+{% include nav/home.html %}
 
 **AP Computer Science Principles**
 <ul>
@@ -74,4 +76,15 @@ class will eventually help me apply them to real-world situations.
         gridItem.appendChild(description);
         container.appendChild(gridItem);
     }
+</script>
+
+Use this script to add comments to your blog posts manually
+
+<script src="https://utteranc.es/client.js"
+        repo="kushs_2025/kush1434"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
