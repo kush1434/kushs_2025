@@ -79,7 +79,7 @@ permalink: /hack/
         <div class="basketball">Basketball</div>
         <div class="shoot-button">Shoot</div>
         <div class="players">
-            <div class="player">Lakers</div>
+            <div class="player">lakers</div>
             <div class="player">Warriors</div>
         </div>
     </div>
