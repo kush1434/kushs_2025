@@ -11,7 +11,7 @@ comments: true
 <li>My name is Kush and I am a sophmore at Del Norte High School</li>
 <img><img src="../me_pic.jpg" alt="Picture of me" width="450" style="height: auto;">
 <br>
-<li>Both my parents are immigrants from India</li>
+<li>My parents are both immigrants from India</li>
 <li>I enjoy playing sleeping and playing basketball in my free time</li>
 </ul>
 <br>
