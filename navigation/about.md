@@ -12,7 +12,7 @@ comments: true
 <img><img src="../me_pic.jpg" alt="Picture of me" width="450" style="height: auto;">
 <br>
 <li>Both my parents are immigrants from India</li>
-<li>I enjoy playing basketball and sleeping in my free time</li>
+<li>I enjoy playing sleeping and playing basketball in my free time</li>
 </ul>
 <br>
 
