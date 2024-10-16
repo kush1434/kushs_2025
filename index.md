@@ -1,8 +1,9 @@
 ---
-layout: base
-title: Student Home 
-description: Home Page
-hide: true
+layout: post
+title: Kush's Personal Blog
+description: Personal Blog about Sprint 2
+type: issues
+comments: True
 ---
 {% include nav/home.html %}
 
@@ -42,7 +43,7 @@ hide: true
 </html>
 <br>
 <a href = "https://kush1434.github.io/kushs_2025/2024/10/15/Teaching-Project_IPYNB_2_.html">
-Application of Teachings
+Sprint 2 Final Hacks
 </a>
 <html lang="en">
 <head>
