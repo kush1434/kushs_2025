@@ -44,6 +44,7 @@ comments: True
 <a href = "https://nighthawkcoders.github.io/portfolio_2025/csp/big-idea/p2/fundamentals">
 Lessons
 </a>
+<br>
 <a href = "https://nighthawkcoders.github.io/portfolio_2025/csse/javascript/fundamentals/for-loops/">
 JavaScript For Loops and Sprites
 </a>
