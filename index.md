@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Kush's Personal Blog
-description: Personal Blog about Sprint 2
+title: Kush's Home Page
+description: Home Page about Sprint 2
 type: issues
 comments: True
 ---
