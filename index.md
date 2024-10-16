@@ -40,6 +40,10 @@ hide: true
     </script>
 </body>
 </html>
+<br>
+<a href = "https://kush1434.github.io/kushs_2025/2024/10/15/Teaching-Project_IPYNB_2_.html">
+Application of Teachings
+</a>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
