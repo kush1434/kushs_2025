@@ -45,10 +45,6 @@ comments: True
 Lessons
 </a>
 <br>
-<a href = "https://nighthawkcoders.github.io/portfolio_2025/csse/javascript/fundamentals/for-loops/">
-JavaScript For Loops and Sprites
-</a>
-<br>
 <a href = "https://kush1434.github.io/kushs_2025/2024/10/15/Teaching-Project_IPYNB_2_.html">
 Sprint 2 Final Hacks
 </a>
