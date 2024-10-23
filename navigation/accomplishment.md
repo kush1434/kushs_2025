@@ -27,3 +27,4 @@ Overall this sprint was a huge learning point for me and helped me define some b
 - Held the responsibilty of being Scrum Master and worked on my first project with my peers
 - Realized mistakes and improvements in my presentational skills 
 
+This sprint helped me learn many of the basics of programming and taught me how to collaborate and present a teaching project.
